@@ -1,0 +1,343 @@
+
+
+.modal_login{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.modal_login_form{
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px black solid;
+    border-radius: 20px;
+    row-gap: 20px;
+}
+
+.modal_login_form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.m1{
+    max-width: 300px;
+    height: 30px;
+    padding: 10px;
+}
+.modal_login_form-button{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+.modal_login_form-button:active{
+    background-color: green;
+    transform: scale(1.2);
+
+}
+
+.modal_signin{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.modal_signin_form{
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px black solid;
+    border-radius: 20px;
+    row-gap: 20px;
+}
+
+.modal_signin_form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.m1{
+    max-width: 300px;
+    height: 30px;
+    padding: 10px;
+}
+.modal_signin_form-button{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+.modal_signin_form-button:active{
+    background-color: green;
+    transform: scale(1.2);
+
+}
+
+
+
+.main__inner{
+    min-height: 700px;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+
+.todo{
+    background-color: rgb(237, 237, 122);
+    padding: 10px;
+    max-width: 300px;
+}
+
+.todo p{
+    max-width: 200px;
+    color: rgb(36, 142, 236);
+}
+
+
+.newTaskCreate{
+    background-color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.newTaskInp1 , .newTaskInp2{
+    height: 40px;
+    max-width:600px ;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 20px;
+    
+}
+.newTaskBtn{
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+select{
+    cursor: pointer;
+    height: 30px;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: orange;
+    color: white;
+    border: none;
+    
+}
+
+/* ... Your existing styles ... */
+
+/* Styles for hover and active states on buttons */
+.modal_form-button:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.modal_form-button:active {
+    background-color: forestgreen;
+    transform: scale(1.2);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.newTaskBtn:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.newTaskBtn:active {
+    background-color: forestgreen;
+    transform: scale(1.2);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Styles for hover state on select */
+select:hover {
+    background-color: darkorange;
+    transition: background-color 0.2s;
+}
+
+/* ... Your existing styles ... */
+/* Add these styles to your existing CSS */
+
+/* Styles for modal_login */
+.modal_login {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal_login_form {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Styles for modal_signin */
+.modal_signin {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal_signin_form {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Styles for wrapper1 */
+.wrapper1 {
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for dashboard */
+.main__inner {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for todo */
+.todo {
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 5px  solid black;
+}
+
+/* Styles for newTaskCreate */
+.newTaskCreate {
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px  solid black;
+}
+
+/* Styles for filterSelect */
+select {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+select:hover {
+    background-color: darkorange;
+}
+
+/* Add more styles as needed for other elements */
+
+button{
+    color: orange;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.header__inner{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 20px;
+    
+    border-top: none;
+
+}
+
+.header__inner-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.header__inner-nav-logo{
+    width: 50%;
+    color: black;
+}
+
+
+.header__inner-nav-menu{
+    width: 50%;
+}
+
+.header__inner-nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header__inner-nav-menu li , .header__inner-nav-menu a{
+    text-decoration: none;
+    list-style: none;
+    color: orange;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    max-width: 300px;
+    margin: 50px auto;
+    
+}
