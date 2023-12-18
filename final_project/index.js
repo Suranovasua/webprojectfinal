@@ -90,13 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function getData() {
-    let data1 = await fetch("https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks")
+    let data1 = await fetch("https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks")
       .then(response => response.json()).then(data => data);
     return data1;
   }
 
   async function toShowTasks(id) {
-    let data1 = await fetch(`https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks/${id}/tasks`)
+    let data1 = await fetch(`https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks/${id}/tasks`)
       .then(response => response.json()).then(data => data);
     return data1;
   }
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body: body.value
     };
     try {
-      const response = await fetch(`https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks/${id}/tasks`, {
+      const response = await fetch(`https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks/${id}/tasks`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
       completed: completed,
     };
     try {
-      const response = await fetch(`https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks/${userId}/tasks/${id}`, {
+      const response = await fetch(`https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks/${userId}/tasks/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function deleteTask(id, userId) {
     try {
-      const response = await fetch(`https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks/${userId}/tasks/${id}`, {
+      const response = await fetch(`https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks/${userId}/tasks/${id}`, {
         method: 'DELETE',
       });
 
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wWrapper();
     } else {
       // Выводим сообщение об ошибке в DOM
-      displayErrorMessage("login-error-message", "Incorrect login or password. Please try again.");
+      alert("login-error-message", "Incorrect login or password. Please try again.");
     }
     await appendDash();
   }
@@ -274,12 +274,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Валидация для регистрации
     if (!validateEmail(sInpEmail.value)) {
       // Выводим сообщение об ошибке в DOM
-      displayErrorMessage("signin-error-message", "Invalid email format. Please enter a valid email address.");
+      alert("signin-error-message", "Invalid email format. Please enter a valid email address.");
     } else if (!sInpPassw.value) {
       // Выводим сообщение об ошибке в DOM
       displayErrorMessage("signin-error-message", "Please enter a password.");
     } else {
-      const url = 'https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks';
+      const url = 'https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks';
       const data = {
         email: sInpEmail.value,
         password: sInpPassw.value
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const responseData = await response.json();
         console.log('Success:', responseData);
-        wLogin();
+        wWrapper();
       } catch (error) {
         console.error('Error:', error);
         // Выводим сообщение об ошибке в DOM
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body: body,
     };
     try {
-      const response = await fetch(`https://656c49aee1e03bfd572e26bd.mockapi.io/aruuke/todo/users_tasks/${userId}/tasks/${id}`, {
+      const response = await fetch(`https://657b02ed394ca9e4af135daa.mockapi.io/users_tasks/${userId}/tasks/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function validateEmail(email) {
     // Простейшая валидация email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[A-Za-z]+@[A-Za-z]+\.[A-Za-z]+$/;
     return emailRegex.test(email);
   }
 
